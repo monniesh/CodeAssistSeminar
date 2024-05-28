@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("https://example.com/credit-card-background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            width: 300px;
+            padding: 16px;
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 100px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .btn:hover {
+            opacity:1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>About Credit Cards</h2>
+    <p>Some information about credit cards...</p>
+
+    <h2>Apply for a Credit Card</h2>
+    <form>
+        <label for="cname">Cardholder Name</label>
+        <input type="text" id="cname" name="cardname" placeholder="Your name.." required>
+
+        <label for="cnum">Card Number</label>
+        <input type="text" id="cnum" name="cardnumber" placeholder="Your card number.." required>
+
+        <label for="expmonth">Expiry Month</label>
+        <input type="text" id="expmonth" name="expmonth" placeholder="Expiry month.." required>
+
+        <label for="expyear">Expiry Year</label>
+        <input type="text" id="expyear" name="expyear" placeholder="Expiry year.." required>
+
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" placeholder="CVV.." required>
+
+        <input type="submit" value="Apply">
+    </form>
+</div>
+
+</body>
+</html>
+
